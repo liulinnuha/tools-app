@@ -1,0 +1,41 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+log/
+debug.log
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Build output (React / Node)
+dist/
+build/
+.next/
+out/
+
+# Coverage
+coverage/
+
+# Dependency directories (optional if using monorepo tools)
+.bazel/
+.pnpm-store/

@@ -1,0 +1,418 @@
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .tool-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .tool-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .tool-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.tool-card {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+.dark .tool-card {
+    background-color: rgba(30, 41, 59, 0.7);
+    border-color: rgba(30, 41, 59, 0.8);
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.25);
+}
+
+.tool-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dark .tool-card:hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.category-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.tool-section {
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .tool-section {
+        padding: 3rem 0;
+    }
+}
+
+.tool-section:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
+.tool-section-header {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .tool-section-header {
+        margin-bottom: 2rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.tool-section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .tool-section-title {
+        font-size: 1.875rem;
+    }
+}
+
+.tool-section-title-icon {
+    margin-right: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #3b82f6, #8b5cf6);
+}
+
+.dark .gradient-text {
+    background-image: linear-gradient(to right, #60a5fa, #a78bfa);
+}
+
+.section-divider {
+    height: 6px;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(59, 130, 246, 0.5),
+        rgba(139, 92, 246, 0.5)
+    );
+    border-radius: 3px;
+    margin: 1.5rem 0;
+}
+
+.dark .section-divider {
+    background: linear-gradient(
+        to right,
+        rgba(59, 130, 246, 0.7),
+        rgba(139, 92, 246, 0.7)
+    );
+}
+
+@media (min-width: 768px) {
+    .section-divider {
+        margin: 2rem 0;
+    }
+}
+
+/* Enhanced animated background for sections */
+.bg-pattern {
+    background-color: rgba(243, 244, 246, 0.8);
+    background-image: radial-gradient(
+        rgba(59, 130, 246, 0.1) 1px,
+        transparent 1px
+    );
+    background-size: 20px 20px;
+}
+
+.dark .bg-pattern {
+    background-color: rgba(17, 24, 39, 0.8);
+    background-image: radial-gradient(
+        rgba(59, 130, 246, 0.15) 1px,
+        transparent 1px
+    );
+}
+
+/* Glass card styling */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.dark .glass-card {
+    background: rgba(15, 23, 42, 0.7);
+    border-color: rgba(30, 41, 59, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+}
+
+.dark .glass-panel {
+    background: rgba(15, 23, 42, 0.5);
+    border-color: rgba(30, 41, 59, 0.2);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scale-in {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.5s ease forwards;
+}
+
+.animate-scale-in {
+    animation: scale-in 0.3s ease forwards;
+}
+
+.animate-slide-up {
+    animation: slide-up 0.4s ease forwards;
+}
+
+.animate-slide-down {
+    animation: slide-down 0.3s ease forwards;
+}
+
+/* Responsive adjustments for tool-grid based on container dimensions */
+@container (min-width: 600px) {
+    .tool-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@container (min-width: 900px) {
+    .tool-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@container (min-width: 1200px) {
+    .tool-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 640px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Improved responsive tool cards */
+.tool-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tool-card > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tool-card p {
+    flex: 1;
+}
+
+/* Improved tool renderer container */
+.tool-renderer-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Enhanced dark mode styles */
+.dark .tool-renderer-container {
+    background-color: rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 0.75rem;
+}
+
+.dark input,
+.dark textarea,
+.dark select {
+    background-color: rgba(30, 41, 59, 0.6);
+    border-color: rgba(75, 85, 99, 0.4);
+}
+
+.dark button {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dark .card {
+    background-color: rgba(30, 41, 59, 0.7);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    border-color: rgba(55, 65, 81, 0.5);
+}
+
+.dark code,
+.dark pre {
+    background-color: rgba(15, 23, 42, 0.8);
+    border-color: rgba(55, 65, 81, 0.5);
+}
+
+.dark .bg-secondary {
+    background-color: rgba(30, 41, 59, 0.6) !important;
+}
+
+.dark .bg-muted {
+    background-color: rgba(30, 41, 59, 0.5) !important;
+}
+
+/* Additional styling for horizontal scrolling tabs */
+.overflow-x-auto::-webkit-scrollbar {
+    height: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Add sliding animation for mobile menu */
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-down {
+    animation: slide-down 0.2s ease-out forwards;
+}
+
+/* Make horizontal scrolling smooth for tool tabs on small devices */
+.tool-tabs-scrollable {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    padding-bottom: 4px;
+}
+
+.tool-tabs-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+    min-width: 100%;
+}
+
+@media (max-width: 640px) {
+    .tool-tabs-container > * {
+        flex: 0 0 auto;
+    }
+}
+
+/* Ensure downloads work properly */
+.download-button {
+    position: relative;
+    z-index: 10;
+}
