@@ -191,7 +191,7 @@ const Footer: React.FC = () => {
                                     href="mailto:support@toolhub.com"
                                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
                                 >
-                                    support@toolhub.com
+                                    support@toollolz.com
                                 </a>
                             </li>
                             <li className="flex items-center">

@@ -29,6 +29,10 @@ import CoinFlipper from "./CoinFlipper";
 import NumberGuessingGame from "./NumberGuessingGame";
 import CurrencyConverter from "./CurrencyConverter";
 import LoanCalculator from "./LoanCalculator";
+import TimeZoneConverter from "./TimeZoneConverter";
+import InvoiceGenerator from "./InvoiceGenerator";
+import CodeBeautifier from "./CodeBeautifier";
+import CSSMinifier from "./CssMinifier";
 import { useToast } from "@/components/ui/use-toast";
 import { cn } from "@/lib/utils";
 
@@ -80,6 +84,10 @@ export const ToolsProvider: React.FC<{ children: React.ReactNode }> = ({
         "number-guessing-game": NumberGuessingGame,
         "currency-converter": CurrencyConverter,
         "loan-calculator": LoanCalculator,
+        "time-zone-converter": TimeZoneConverter,
+        "invoice-generator": InvoiceGenerator,
+        "code-beautifier": CodeBeautifier,
+        "css-minifier": CSSMinifier,
     };
 
     return (

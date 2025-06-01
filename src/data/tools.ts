@@ -348,6 +348,7 @@ export const tools: ToolType[] = [
         category: categories.find((c) => c.id === "finance")!,
         path: "/tools/loan-calculator",
         icon: CreditCard,
+        new: true,
     },
     {
         id: "currency-converter",
@@ -356,6 +357,7 @@ export const tools: ToolType[] = [
         category: categories.find((c) => c.id === "finance")!,
         path: "/tools/currency-converter",
         icon: DollarSign,
+        new: true,
     },
     {
         id: "image-resizer",
@@ -412,6 +414,7 @@ export const tools: ToolType[] = [
         category: categories.find((c) => c.id === "date-time")!,
         path: "/tools/time-zone-converter",
         icon: Globe,
+        new: true,
     },
     {
         id: "binary-converter",
@@ -484,6 +487,7 @@ export const tools: ToolType[] = [
         category: categories.find((c) => c.id === "development")!,
         path: "/tools/css-minifier",
         icon: Code,
+        new: true,
     },
     {
         id: "js-minifier",
@@ -524,7 +528,6 @@ export const tools: ToolType[] = [
         category: categories.find((c) => c.id === "generators")!,
         path: "/tools/uuid-generator",
         icon: Hash,
-        new: true,
     },
     {
         id: "checksum-calculator",

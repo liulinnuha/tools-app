@@ -89,12 +89,12 @@ const SupportPage: React.FC = () => {
             title: "General Questions",
             items: [
                 {
-                    question: "What is ToolHub?",
-                    answer: "ToolHub is a comprehensive collection of online tools designed to help users with various digital tasks. From file conversion to data calculation, our platform offers a wide range of utilities that are free to use directly in your browser.",
+                    question: "What is ToolLolz?",
+                    answer: "ToolLolz is a comprehensive collection of online tools designed to help users with various digital tasks. From file conversion to data calculation, our platform offers a wide range of utilities that are free to use directly in your browser.",
                 },
                 {
                     question: "Are these tools free to use?",
-                    answer: "Yes, all the tools available on ToolHub are completely free to use. We believe in providing accessible utilities to everyone without any hidden costs.",
+                    answer: "Yes, all the tools available on ToolLolz are completely free to use. We believe in providing accessible utilities to everyone without any hidden costs.",
                 },
                 {
                     question: "Do I need to create an account?",
@@ -144,7 +144,7 @@ const SupportPage: React.FC = () => {
             icon: Mail,
             title: "Email Support",
             description: "Send us an email and we'll respond within 24 hours.",
-            action: "support@toolhub.com",
+            action: "support@toololz.com",
             color: "bg-blue-100 text-blue-600 dark:bg-blue-900/40 dark:text-blue-400",
         },
         {
