@@ -32,9 +32,12 @@ import LoanCalculator from "./LoanCalculator";
 import TimeZoneConverter from "./TimeZoneConverter";
 import InvoiceGenerator from "./InvoiceGenerator";
 import CodeBeautifier from "./CodeBeautifier";
-import CSSMinifier from "./CssMinifier";
+import CSSMinifier from "./CSSMinifier";
+import WheelOfNames from "./WheelOfNames";
+import YamlJsonTransformer from "./YamlJsonTransformer";
 import { useToast } from "@/components/ui/use-toast";
 import { cn } from "@/lib/utils";
+import { ChevronFirstIcon } from "lucide-react";
 
 interface ToolRendererProps {
     toolId: string;
@@ -88,6 +91,8 @@ export const ToolsProvider: React.FC<{ children: React.ReactNode }> = ({
         "invoice-generator": InvoiceGenerator,
         "code-beautifier": CodeBeautifier,
         "css-minifier": CSSMinifier,
+        "wheel-of-names": WheelOfNames,
+        "yaml-to-json": YamlJsonTransformer,
     };
 
     return (
