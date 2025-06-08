@@ -448,14 +448,14 @@ export const tools: ToolType[] = [
         path: "/tools/word-counter",
         icon: Hash,
     },
-    {
-        id: "image-to-base64",
-        name: "Image to Base64",
-        description: "Convert image to Base64 encoding",
-        category: categories.find((c) => c.id === "transforms")!,
-        path: "/tools/image-to-base64",
-        icon: FileImage,
-    },
+    // {
+    //     id: "image-to-base64",
+    //     name: "Image to Base64",
+    //     description: "Convert image to Base64 encoding",
+    //     category: categories.find((c) => c.id === "transforms")!,
+    //     path: "/tools/image-to-base64",
+    //     icon: FileImage,
+    // },
     {
         id: "aspect-ratio-calculator",
         name: "Aspect Ratio Calculator",
