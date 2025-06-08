@@ -5,7 +5,7 @@ import UnitConverter from "./UnitConverter";
 import DateCalculator from "./DateCalculator";
 import QrGenerator from "./QrGenerator";
 import JsonFormatter from "./JsonFormatter";
-import Base64Encoder from "./Base64Encoder";
+import Base64Tool from "./Base64Tool";
 import PasswordGenerator from "./PasswordGenerator";
 import ImageCompressor from "./ImageCompressor";
 import UrlEncoder from "./UrlEncoder";
@@ -55,7 +55,7 @@ export const ToolsProvider: React.FC<{ children: React.ReactNode }> = ({
 }) => {
     // Map of tool IDs to their corresponding components
     const toolComponents: Record<string, React.ComponentType> = {
-        "base64-encoder": Base64Encoder,
+        "base64-encoder": Base64Tool,
         "bmi-calculator": BMICalculator,
         calculator: Calculator,
         "unit-converter": UnitConverter,
